@@ -1,0 +1,99 @@
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(minDistance(13013));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int minDistance(int n) {
+        int total=n;
+        int sum=0;
+        int x=1;
+        int b=0;
+
+        for(int i=2; i<=n; i++){
+            if(n%i==0){
+                sum=i-x;
+                x=i;
+                if(sum<total){
+                    total=sum;
+                }
+
+
+
+            }
+
+        }
+
+
+
+        return total;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

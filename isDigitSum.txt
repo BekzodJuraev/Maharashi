@@ -1,0 +1,89 @@
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(isDigitSum(13,6));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int isDigitSum(int n, int m) {
+
+        int sum=0;
+        int b=0;
+
+        if(n<0 || m<0){
+            return -1;
+        }
+
+        while (n > 0) {
+            b=n%10;
+            sum+=b;
+            n=n/10;
+        }
+
+        if(sum<m){
+            return 1;
+        }
+        return 0;
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

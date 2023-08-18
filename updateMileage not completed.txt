@@ -1,0 +1,76 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(updateMileage(new int[]{8,9,9,5,0},1));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+       static  int updateMileage(int[ ] a, int miles) {
+        int mile=0;
+        int arr[]=new int[a.length];
+
+        for(int i=a.length-1; i>=0; i--){
+            mile=(a[i]+mile)*10;
+
+        }
+        mile=(mile/10)+miles;
+        for(int i=0; i< arr.length; i++){
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

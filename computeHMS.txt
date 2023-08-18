@@ -1,0 +1,49 @@
+import java.awt.*;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Arrays;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println(computeHMS(380));
+
+
+    }
+    static int computeHMS(int a){
+        int newarr[]=new int[3];
+        int x=a/3600;
+        newarr[0]=x;
+        int b=a%3600;
+        newarr[1]=b/60;
+        newarr[2]=b%60;
+
+
+
+
+        return newarr[0];
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

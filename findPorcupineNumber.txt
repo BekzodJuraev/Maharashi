@@ -1,0 +1,59 @@
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println(findPorcupineNumber(159));
+
+    }
+    static int findPorcupineNumber(int n){
+        int prime=0;
+        int nextprime=0;
+        int check=0;
+        for(int i=7; i<1000; i++){
+            prime=i;
+
+            for(int j=2; j<i; j++){
+              if(i%j==0){
+                  prime=0;
+                  break;
+              }
+
+              }
+
+
+
+
+          if(prime==n && n%10==9){
+              prime++;
+              check+=1;
+              break;
+          }}
+
+
+      for(int i=prime; i<1000; i++){
+          nextprime=i;
+          for (int j=2; j<i; j++){
+              if(i%j==0){
+                  nextprime=0;
+                  break;
+              }
+          }
+          if(nextprime>0){
+              if(nextprime%10==9 && check==1){
+                  return 1;
+              }
+              else {
+                  return 0;
+              }
+          }
+      }
+    return 1;
+    }
+}

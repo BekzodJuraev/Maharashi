@@ -1,0 +1,71 @@
+
+
+
+def vesuvian(n):
+    a=1
+    b=1
+    c=0
+    sum=0
+    x=0
+    g=0
+    d=0
+    s=0
+
+    for i in range(n):
+        c=a*a
+        a+=1
+        if(c<n):
+            d=c
+
+        else:
+            a=1
+            break
+    for i in range(d):
+        x=b*b
+        b+=1
+        if(x+d==n):
+            b+=1
+
+            x=b
+
+            sum+=1
+            break
+    for i in range(d):
+
+
+      r=b*b
+      h=x*x
+      b+=1
+      if(r+h>n):
+          b=x
+          x+=1
+
+
+      elif(r+h==n):
+          sum+=1
+          break
+
+
+
+
+
+
+
+    if(sum==2):
+        return 1
+
+    return 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+print(vesuvian(85))

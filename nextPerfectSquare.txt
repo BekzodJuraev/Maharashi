@@ -1,0 +1,105 @@
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(nextPerfectSquare(49));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+
+    static int isPerfectSquare(int n) {
+        for(int i=1; i<n; i++){
+            if(i*i==n){
+                return n;
+            }
+        }
+        return 0;
+
+
+
+    }
+    static int nextPerfectSquare(int n){
+        if(n==0){
+            return 1;
+        }
+
+        for(int i=1; i<n; i++){
+            if(isPerfectSquare(n+i)>1){
+                return isPerfectSquare(n+i);
+
+            }
+        }
+        return 0;
+
+    }
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

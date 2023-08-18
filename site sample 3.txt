@@ -1,0 +1,13 @@
+def str(a,start,len):
+    array=[]
+    for i in range(start,len):
+        array.append(a[i])
+
+
+
+    return array
+
+
+
+
+print(str(['a','b','c'],3,1))

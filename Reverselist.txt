@@ -1,0 +1,20 @@
+def array(a):
+    x = a[0] % 10
+
+    for i in range(len(a)):
+
+        if (a[i] < 0):
+            a[i] = -a[i]
+
+        while (a[i] > 0):
+            b = a[i] % 10
+
+            if (x != b):
+                return 0
+            a[i] = int(a[i] / 10)
+
+    return 1
+
+
+print(array([9, 999, 99999, -9999]))
+

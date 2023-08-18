@@ -1,0 +1,54 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(areAnagrams(new char[]{'p','o','o','l'}, new char[]{'p','o','l','l'}));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int areAnagrams(char[] a1, char[] a2) {
+        int check = 0;
+        if(a1.length!= a2.length){
+            return 0;
+        }
+
+        for (int i = 0; i < a1.length; i++) {
+            for (int j = 0; j < a1.length; j++) {
+                if (check > a1.length-1) {
+                    break;
+                }
+
+                if (a1[check] == a2[j]) {
+                    check += 1;
+
+                }
+            }
+
+
+        }
+
+
+        if(check==a1.length){
+            return 1;
+        }
+        return 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

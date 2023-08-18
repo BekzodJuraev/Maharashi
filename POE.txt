@@ -1,0 +1,91 @@
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(POE(new int[]{1, 8, 3, 7, 10, 2}));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int POE(int [ ] a) {
+        int check=0;
+        int sum=0;
+        int poe=0;
+        for(int i=0; i<a.length; i++){
+            sum+=a[i];
+           if(i+2<a.length){
+               for(int j=i+2; j<a.length; j++){
+                   check+=a[j];
+               }
+           }
+            if(sum==check){
+                return i+1;
+            }
+            else {
+                check=0;
+            }
+        }
+
+        return -1;
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

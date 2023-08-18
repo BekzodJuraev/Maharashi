@@ -1,0 +1,107 @@
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(encodeNumber(14));
+
+
+         Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. 
+
+    }
+
+    static int[] encodeNumber(int n) {
+        int check=1;
+        int factor=0;
+        int a=n;
+
+
+        for(int i=2; in; i++){
+            check=i;
+            for(int j=2; ji; j++){
+                if(i%j==0){
+                    check=1;
+                    break;
+                }
+            }
+
+
+            if(check1){
+                for(int k=0; kn; k++){
+                    if(a%check==0){
+
+
+                        System.out.println(check);
+                        a=acheck;
+                    }
+                    else {
+                        break;
+                    }
+                }
+            }
+
+
+
+        }
+        return ans;
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

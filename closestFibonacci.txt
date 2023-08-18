@@ -1,0 +1,28 @@
+def closestFibonacci(n):
+    a=1
+    b=1
+    d=0
+
+
+    for i in range(n):
+        g=a+b
+
+        a=b
+        b=g
+        if(g<=n):
+            d=g
+
+    return d
+
+
+
+
+
+
+
+
+
+
+
+
+print(closestFibonacci(13))

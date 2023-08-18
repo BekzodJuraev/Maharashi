@@ -1,0 +1,69 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(isOlympic(new int[]{3,2,1}));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int isOlympic (int[] a) {
+        int sum=0;
+        for(int i=0; i<a.length; i++){
+            for(int j=0; j<a.length; j++){
+                if(i!=j && a[i]>a[j]){
+                    sum+=a[j];
+                }
+            }
+            if(a[i]>=sum){
+                sum=0;
+            }
+            else {
+                return 0;
+            }
+    }
+
+
+
+    return 1;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(decodeArray(new int[]{0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1}));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+    static  int decodeArray(int[ ] a){
+        int total=0;
+        int sum=0;
+
+        for(int i=0; i<a.length; i++){
+            if(a[i]==0){
+                total+=1;
+
+            }
+            else if (a[i]==1) {
+                sum=sum*10+total;
+
+                total=0;
+
+            }
+            else {
+                return -1;
+            }
+        }
+        return sum;
+
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+        
+

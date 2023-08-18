@@ -1,0 +1,64 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(isAllPossibilities(new int[]{1, 2, 4, 3}));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int isAllPossibilities(int[ ] a) {
+        int check=0;
+        for(int i=0; i<a.length; i++){
+            if(a[i]<=a.length-1){
+                for(int j=0; j<a.length; j++){
+                    if(i==a[j]){
+                        check+=1;
+                    }
+                }
+                if(check==0){
+                    return 0;
+                }
+                else{
+                    check=0;
+                }
+
+            }
+            else{
+                return 0;
+            }
+        }
+        return 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

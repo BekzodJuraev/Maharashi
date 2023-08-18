@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println(decodeArray(new int[]{0, -3, 0, -4, 0})); //11142
+
+
+    }
+    static int decodeArray(int[ ] a) {
+        int sum=1;
+
+
+        for(int i=0; i<a.length; i++){
+
+             if(i+1<=a.length-1){
+                 int x=a[i];
+                 int y=a[i+1];
+                 int c=x-y;
+                 sum=(sum*10)+c;
+             }
+        }
+
+    return sum;
+    }
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+

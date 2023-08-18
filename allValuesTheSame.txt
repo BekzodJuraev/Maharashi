@@ -1,0 +1,64 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(allValuesTheSame(new int[]{-2343456, -2343456, -2343456, -2343456}));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int   allValuesTheSame(int[ ] a) {
+
+        if(a.length==0){
+            return 0;
+        }
+        for(int i=0; i<a.length; i++){
+            if(i+1<a.length){
+                if(a[i]!=a[i+1]){
+                    return 0;
+                }
+            }
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        return 1;
+
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

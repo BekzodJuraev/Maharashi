@@ -1,0 +1,107 @@
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(isFactorialPrime(2));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int factorial(int x){
+        if(x==0){
+            return 1;
+        }
+        else{
+            return x*factorial(x-1);
+        }
+    }
+
+    static int isFactorialPrime(int n) {
+        int x=1;
+        int check=1;
+
+
+        for(int i=2; i<=n; i++){
+            check=i;
+            for(int j=2; j<n; j++){
+                if(i%j==0){
+                    check=1;
+                    break;
+                }
+            }
+            if(check==n){
+                for(int k=1; k<n; k++){
+                    if(factorial(k)+1==n){
+                        return 1;
+                    }
+                }
+            }
+
+
+        }
+        return 0;
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

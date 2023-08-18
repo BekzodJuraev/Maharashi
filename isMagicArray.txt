@@ -1,0 +1,115 @@
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(isMagicArray(new int[]{8, 5, 5,
+                5, 3}));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+
+
+
+    static int isPrime(int n) {
+        int prime=0;
+        for(int i=n; i<=n; i++){
+            prime=i;
+            for(int j=2; j<n; j++){
+                if(i%j==0){
+                    prime=0;
+                    break;
+                }
+            }
+            if(prime>0){
+                return prime;
+
+            }
+        }
+
+
+
+        return 0;
+
+
+
+
+    }
+    static int isMagicArray(int []a) {
+        int total=0;
+
+        for(int i=0; i<a.length; i++){
+            if(a[i]==isPrime(a[i])){
+                total+=a[i];
+            }
+        }
+        if(total==a[0]){
+            return 1;
+        }
+
+
+
+
+        return 0;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

@@ -1,0 +1,91 @@
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(largestPrimeFactor(1));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int largestPrimeFactor(int n) {
+        int check=0;
+        int factor=0;
+        for(int i=2; i<n; i++){
+            check=i;
+            for(int j=2; j<i; j++){
+                if(i%j==0){
+                    check=0;
+                    break;
+                }
+            }
+
+           if(check>1 && n%check==0){
+               factor=check;
+           }
+
+        }
+        return factor;
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

@@ -1,0 +1,64 @@
+import java.io.*;
+import java.util.*;
+import java.lang.Math;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(isInertial(new int[]{2,3,4,5,1}));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+    static  int isInertial(int a[]){
+        int max=a[0];
+        int odd[]=new int[];
+        int even[]= new int[];
+
+
+
+        for(int i=0; i<a.length; i++){
+
+            if(max<a[i]){
+                max=a[i];
+            }
+            if(a[i]%2==1)//odd
+            {
+                odd[i]=a[i];
+
+
+
+
+            }
+            else{
+                even[i]=a[i];
+            }
+        }
+        for(int i=0; i<a.length; i++){
+
+            if(a[i]%2==1)//odd
+                {
+                    odd[i]=a[i];
+
+
+
+
+            }
+            else{
+                even[i]=a[i];
+            }
+        }
+
+        for(int i=0; i<a.length; i++){
+            if(odd[i]>even[i] && max>odd[i]){
+                return 1;
+            }
+        }
+
+
+
+        return 0;
+    }
+}

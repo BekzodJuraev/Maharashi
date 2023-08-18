@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println(factorEqual(10, 9));
+
+    }
+
+    static int factorEqual(int a, int b) {
+        int first=0;
+        int second=0;
+        for(int i=1; i<a; i++){
+            if(a%i==0){
+                first+=1;
+            }
+        }
+        for(int i=1; i<b; i++){
+            if(b%i==0){
+                second+=1;
+
+            }
+        }
+
+        if(first==second){
+            return 1;
+        }
+        return 0;
+
+
+
+    }
+}
+

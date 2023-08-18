@@ -1,0 +1,83 @@
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        System.out.println(countDigit(33331,3));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int countDigit (int a,int x) {
+        int b=0;
+        int sum=0;
+
+        while(a>0){
+            b=a%10;
+            if(b==x){
+                sum+=1;
+            }
+            a=a/10;
+        }
+        return sum;
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+

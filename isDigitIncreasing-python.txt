@@ -1,0 +1,21 @@
+def a(n):
+    a=0
+    sum=0
+    x=1
+
+    for i in range(100):
+        a = (a * 10) + x
+        sum+=a
+        if(n<sum):
+            a=0
+            sum=0
+            x+=1
+        elif(n==sum):
+            return 1
+
+    return 0
+
+
+
+
+print(a(7404))

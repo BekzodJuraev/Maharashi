@@ -1,0 +1,64 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(loopSum(new int[]{1,2,3},2));
+
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    }
+
+    static int   loopSum(int[ ] a,int n) {
+        int sum=0;
+        int j=0;
+
+        for(int i=0;  i< n; i++){
+            if(j==a.length){
+                j=0;
+            }
+            sum+=a[j];
+            j+=1;
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        return sum;
+
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
